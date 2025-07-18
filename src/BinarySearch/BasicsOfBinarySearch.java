@@ -8,7 +8,7 @@ public class BasicsOfBinarySearch {
         int start = 0, end = n-1;
         boolean flag = false;
         while(start<=end){
-            int mid = (start+end)/2;
+            int mid = (end-start)/2 + start;
             if(arr[mid] > target) end= mid-1;
             else if(arr[mid]<target) start = mid+1;
             else if(arr[mid]==target){
@@ -16,7 +16,7 @@ public class BasicsOfBinarySearch {
                 break;
             }
         }
-        if(flag==true) System.out.println("target found");
-        else System.out.println("target not present");
+        if(flag==true) System.out.println("element present");
+        else System.out.println("not present");
     }
 }
