@@ -10,6 +10,7 @@ public class childAndBaseClass {
         public int RollNo;
         public int marks;
         Student(int age,String name,String address,int RollNo,int marks){
+            System.out.println("called during object creation!");
             this.age = age;
             this.name = name;
             this.address = address;
