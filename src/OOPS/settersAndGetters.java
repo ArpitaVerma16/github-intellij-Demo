@@ -1,6 +1,6 @@
 package OOPS;
 
-public class employeeApp {
+public class settersAndGetters {
     static class Employee{
         //Data hiding
         private String name;

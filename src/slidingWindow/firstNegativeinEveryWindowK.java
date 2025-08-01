@@ -15,7 +15,7 @@ public class firstNegativeinEveryWindowK {
         }
         System.out.println("Enter window size: ");
         int k = sc.nextInt();
-//        for (int i = 0; i < n; i++) {
+//        for (int i = 0; i < n-k+1; i++) {
 //            for (int j = i; j < i + k; j++) {
 //                while (j < n) {
 //                    if (arr[j] < 0) {
@@ -27,7 +27,7 @@ public class firstNegativeinEveryWindowK {
 //                    }
 //                }
 //            }
-//        }
+//
         int i = 0,j=0;
         ArrayList<Integer> l = new ArrayList<>();
         Deque<Integer> dq = new LinkedList<>();
@@ -46,7 +46,6 @@ public class firstNegativeinEveryWindowK {
                  i++;
                  j++;
             }
-
         }
         System.out.println("first negative in every window: ");
         for(int num: l){
