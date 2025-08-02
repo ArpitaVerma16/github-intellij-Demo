@@ -5,7 +5,7 @@ public class sorting {
     public static void main(String[] args) {
         // sorting string
         String s = "arpita";
-        char ch[] = s.toCharArray();
+        char[] ch = s.toCharArray();
         //print
         for(char ele : ch){
             System.out.print(ele);
